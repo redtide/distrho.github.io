@@ -1,0 +1,19 @@
+---
+title: "Downloads"
+permalink: /downloads/
+---
+{% extends "_layouts/default.html.twig" %}
+
+{% block content %}
+    {% for category in ["DPF-Plugins", "DIE-Plugins", "DISTRHO-Ports"] %}
+    <h2 id="{{ category | lower }}">{{ category }}</h2>
+    <ul>
+        {% set latest = data.releases[category][0] %}
+        {% set tarUrl = latest.tarball_url %}
+        {% set zipUrl = latest.zipball_url %}
+        {% set tagName = latest.tag_name %}
+        <li><a href="{{ tarUrl }}">{{ tagName }} (tar.gz)</a></li>
+        <li><a href="{{ zipUrl }}">{{ tagName }} (zip)</a></li>
+    </ul>
+    {% endfor %}
+{% endblock %}

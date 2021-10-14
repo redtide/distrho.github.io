@@ -1,0 +1,25 @@
+{% extends "_layouts/default.html.twig" %}
+
+{% block content %}
+    {% set plugin = null %}
+    {% for p in data.plugins[this.category] if p.name == this.title -%}
+        {% set plugin = p %}
+    {% endfor %}
+
+    {# Screenshot #}
+    {% set plugin_imageurl = "/assets/images/plugins/" ~ this.category ~ '/' ~ this.basename ~ ".png" %}
+    <a href="{{ url(plugin_imageurl) }}">
+    <img src="{{ url(plugin_imageurl) }}"
+        alt="{{ plugin.name }} Screenshot" width="192px" style="margin-bottom:16px"/>
+    </a>
+
+    {{ this.content }}
+
+    {% set plugin_url = plugin.url %}
+    {% if not plugin_url %}
+        {% set plugin_url = data.plugins[this.category].url %}
+    {% endif %}
+
+    Project URL: <a href="{{ plugin_url }}">{{ plugin_url }}</a>
+
+{% endblock %}

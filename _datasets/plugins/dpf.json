@@ -1,0 +1,48 @@
+{
+  "name": "DPF",
+  "url": "https://github.com/DISTRHO/DPF-Plugins/",
+  "have_gui": true,
+  "collection":
+  [
+    {
+      "name": "glBars"
+    },
+    {
+      "name": "Kars"
+    },
+    {
+      "name": "Max-Gen examples",
+      "collection": [
+        { "name": "MaBitcrush" },
+        { "name": "MaFreeverb" },
+        { "name": "MaGigaverb" },
+        { "name": "MaPitchshift" }
+      ]
+    },
+    {
+      "name": "Mini-Series",
+      "collection": [
+        { "name": "3BandEQ" },
+        { "name": "3BandSplitter" },
+        { "name": "PingPongPan" }
+      ]
+    },
+    {
+      "name": "ndc-Plugs",
+      "collection": [
+        { "name": "Amplitude Imposer" },
+        { "name": "Cycle Shifter" },
+        { "name": "Soul Force" }
+      ]
+    },
+    {
+      "name": "MVerb"
+    },
+    {
+      "name": "Nekobi"
+    },
+    {
+      "name": "ProM"
+    }
+  ]
+}

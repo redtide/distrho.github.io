@@ -1,0 +1,25 @@
+{
+  "name": "DIE",
+  "url": "https://github.com/DISTRHO/DIE-Plugins/",
+  "collection":
+  [
+    {
+      "name": "a-comp"
+    },
+    {
+      "name": "a-delay"
+    },
+    {
+      "name": "a-eq"
+    },
+    {
+      "name": "a-exp"
+    },
+    {
+      "name": "a-fluidsynth"
+    },
+    {
+      "name": "a-reverb"
+    }
+  ]
+}

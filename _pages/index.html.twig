@@ -1,0 +1,50 @@
+---
+title: "Welcome to DISTRHO"
+permalink: /
+---
+{% extends "_layouts/default.html.twig" %}
+
+{% block content %}
+{% markdown %}
+[DISTRHO] is an open-source project for Cross-Platform Audio Plugins.
+
+The project is splitted into 3 main categories:
+
+- [DPF-Plugins]:
+    Plugins made with our own plugin framework, either created by us
+    or ports of existing plugins to DPF style.
+    Typically available as LV2, VST2 and VST3, with LADSPA and DSSI as well where possible.
+
+- [DIE-Plugins]:
+    Plugins imported into the DISTRHO project for easy packaging.
+    Imported plugins have their LV2 bundle and URIs renamed,
+    in order to make them compatible with the originals.
+    Currently only available as LV2.
+
+- [DISTRHO-Ports]:
+    JUCE-based plugins ported to Linux and LV2,
+    also available as VST2 and sometimes VST3.
+
+## PawPaw
+
+[PawPaw] is a Cross-Platform build scripts setup for static libraries and audio plugins.
+It was created out of the need of many open-source developers
+to easily build their stuff for macOS and Windows,
+where usually dependencies are involved which need to be built manually.
+
+## Get them all
+
+Everything we release is free and open-source.
+You can find the source code for all the plugins, ports, PawPaw
+and even [this website] there.
+
+
+[DISTRHO]:       https://github.com/DISTRHO/
+[DPF-Plugins]:   https://github.com/DISTRHO/DPF-Plugins/
+[DIE-Plugins]:   https://github.com/DISTRHO/DIE-Plugins/
+[DISTRHO-Ports]: https://github.com/DISTRHO/DISTRHO-Ports/
+[PawPaw]:        https://github.com/DISTRHO/PawPaw/
+[this website]:  https://github.com/DISTRHO/distrho.github.io/
+
+{% endmarkdown %}
+{% endblock %}

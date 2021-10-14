@@ -1,0 +1,43 @@
+collections:
+- name: content
+  folder: _content
+- name: plugins
+  folder: _plugins
+- name: posts
+  folder: _posts
+
+data:
+- _data
+
+datasets:
+- name: plugins
+  folder: _datasets/plugins
+- name: releases
+  folder: _datasets/releases
+
+pageviews:
+- _pages
+
+target: _www
+
+templates:
+  redirect: false
+
+exclude:
+- INFO.md
+- README.md
+- new_post.sh
+- site.sh
+- stakx
+
+name: DISTRHO
+description: Cross-Platform Audio Plugins
+
+url: "https://distrho.kx.studio"
+
+organization:
+  url: "https://github.com/DISTRHO"
+
+repository:
+  branch: "master"
+  url: "https://github.com/DISTRHO/distrho.github.io"

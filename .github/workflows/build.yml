@@ -1,0 +1,42 @@
+name: Site
+on: push
+env:
+  ASSET_NAME: stakx-0.2.1.phar
+  ASSET_ID: 22509930
+jobs:
+  site:
+    name: Site
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Doxygen
+      run: sudo apt-get install -y doxygen
+    - name: Build Documentation
+      run: bash site.sh --doxygen
+    - name: Download stakx
+      run: |
+        curl -LJO \
+          -H "Accept: application/octet-stream" \
+          https://api.github.com/repos/stakx-io/stakx/releases/assets/${ASSET_ID}
+        mv ${ASSET_NAME} stakx
+        chmod +x stakx
+    - name: Download Releases Info
+      run: bash _scripts/get_releases_info.sh
+    - name: Build
+      if: ${{ github.repository_owner == 'DISTRHO' }}
+      run: bash site.sh --build
+    - name: Build Fork
+      if: ${{ github.repository_owner != 'DISTRHO' }}
+      run: |
+        ./stakx build --conf=_config_fork.yml
+        BASEURL_DIR="$GITHUB_WORKSPACE/_www/$(echo '${{ github.repository }}' | cut -d/ -f2)"
+        pushd "${BASEURL_DIR}"; mv ./* ./../; popd
+        rm -rf "${BASEURL_DIR}"
+    - name: Upload to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: www
+        publish_dir: ./_www
+        force_orphan: true

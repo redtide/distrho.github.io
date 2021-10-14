@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+{% include "_includes/head.html.twig" %}
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+{% include "_includes/header.html.twig" %}
+        <div class="main-box"><div class="container">
+            <article>
+                <h1>{{ this.title }}</h1>
+                {% block content %}{% endblock %}
+            </article>
+        </div></div>
+{% include "_includes/footer.html.twig" %}
+    </body>
+</html>

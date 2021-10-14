@@ -1,0 +1,12 @@
+        <title>{{ this.title }} | {{ site.name }}</title>
+        <meta charset="utf-8">
+        <meta name="description" content="{{ this.title }} | {{ site.name }}: {{ site.description }}" />
+{#
+        <link rel="stylesheet" href="{{ url("/assets/css/original-style.css")   }}" type="text/css" media="all">
+        <link rel='stylesheet' href="{{ url("/assets/fonts/fonts.css") }}" type='text/css' media="all">
+#}
+        <link rel="stylesheet" href="{{ url("/assets/css/bootstrap.min.css") }}" type="text/css" media="all">
+        <link rel="stylesheet" href="{{ url("/assets/css/custom.css") }}" type="text/css" media="all">
+        <link rel="alternate" type="application/atom+xml" href="{{ url("/atom.xml") }}" title="{{ site.name }} News">
+
+{% include "_includes/favicons.html.twig" %}

@@ -1,0 +1,14 @@
+# Built files
+/bin/
+/_datasets/releases
+/_DPF/
+/_www/
+/DPF/
+/vendor/
+/*stakx*
+
+# Jetbrains projects
+/.idea/
+
+# VSCode projects
+*.code-workspace

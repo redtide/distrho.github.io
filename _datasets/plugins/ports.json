@@ -1,0 +1,115 @@
+{
+  "name": "Ports",
+  "url": "https://github.com/DISTRHO/DISTRHO-Ports/",
+  "have_gui": true,
+  "collection":
+  [
+    {
+      "name": "CHOW"
+    },
+    {
+      "name": "Swanky Amp"
+    },
+    {
+      "name": "Vitalium"
+    },
+    {
+      "name": "Arctican Plugins",
+      "collection": [
+        {
+          "name": "The Pilgrim 2"
+        },
+        {
+          "name": "The Function"
+        }
+      ]
+    },
+    {
+      "name": "Dexed"
+    },
+    {
+      "name": "dRowAudio Plugins",
+      "collection": [
+        {
+          "name": "Distortion"
+        },
+        {
+          "name": "Distortion Shaper"
+        },
+        {
+          "name": "Flanger"
+        },
+        {
+          "name": "Reverb"
+        },
+        {
+          "name": "Tremolo"
+        }
+      ]
+    },
+    {
+      "name": "EasySSP"
+    },
+    {
+      "name": "JuceOPL"
+    },
+    {
+      "name": "Juced Plugins",
+      "collection": [
+        {
+          "name": "DrumSynth"
+        },
+        {
+          "name": "EQinox"
+        }
+      ]
+    },
+    {
+      "name": "KlangFalter"
+    },
+    {
+      "name": "LUFS Meter"
+    },
+    {
+      "name": "Luftikus"
+    },
+    {
+      "name": "Obxd"
+    },
+    {
+      "name": "Pitched Delay"
+    },
+     {
+      "name": "Refine"
+    },
+    {
+      "name": "Stereo Source Separator"
+    },
+    {
+      "name": "TAL Plugins",
+      "collection": [
+        {
+          "name": "Dub-3"
+        },
+        {
+          "name": "Filter"
+        },
+        {
+          "name": "NoiseMaker"
+        },
+        {
+          "name": "Reverb"
+        },
+        {
+          "name": "Vocoder"
+        }
+      ]
+    },
+    {
+      "name": "Vex"
+    },
+    {
+      "name": "Wolpertinger"
+    }
+  ]
+}

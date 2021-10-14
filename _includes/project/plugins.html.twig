@@ -1,0 +1,37 @@
+
+{% for category in data.plugins | order("name", "ASC") %}
+    {% set category_id = category.name | lower | replace({' ': '-'}) %}
+    {% set have_gui    = category.have_gui %}
+
+    <h2 id="{{ category_id }}">{{ category.name }}</h2>
+    <div class="grid">
+    {% for plugin in category.collection %}
+        {% set plugin_basename = plugin.name | lower | replace({' ': '-'}) %}
+        {% set plugin_pageurl  = "/plugins/" ~ category_id ~ '/' ~ plugin_basename ~ '/' %}
+        {% set plugin_have_gui = have_gui %}
+
+        {% if not plugin_have_gui and plugin.have_gui %}
+            {% set plugin_have_gui = true %}
+        {% endif %}
+
+        {% set plugin_imageurl = null %}
+        {% if plugin_have_gui %}
+            {% set plugin_imageurl = "/assets/images/plugins/" ~ category_id ~ '/' ~ plugin_basename ~ ".png" %}
+        {% else %}
+            {% set plugin_imageurl = "/assets/images/plugins/no-gui.png" %}
+        {% endif %}
+
+        <div class="grid-item">
+            <div class="thumb-image-container">
+                <a href="{{ url(plugin_pageurl) }}">
+                    <img src="{{ url(plugin_imageurl) }}"
+                        alt="{{ plugin.name }} Screenshot" />
+                </a>
+            </div>
+            <div class="thumb-image-description">
+                <a href="{{ url(plugin_pageurl) }}">{{ plugin.name }}</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}

@@ -1,0 +1,13 @@
+
+<table>
+    <tbody>
+{% for user in data.team %}
+        <tr>
+            <td><img src="{{ url("/assets/images/avatars/") ~ user.nick }}.jpg" alt="Avatar" width="80px"></td>
+            <td><a href="{{ user.url }}">{{ user.name }} ({{ user.nick }})</a><br />
+            <strong>{{ user.role }}</strong>, {{ user.info }}<br />
+            Contact: <a href="mailto:{{ user.mail }}">{{ user.mail }}</a></td>
+        </tr>
+{% endfor %}
+    </tbody>
+</table>

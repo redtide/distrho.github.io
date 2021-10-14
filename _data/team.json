@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Filipe Coelho",
+        "nick": "falkTX",
+        "url": "https://github.com/falkTX/",
+        "role": "Project Leader",
+        "info": "does the main code and overall management. He's also the leader of DISTRHO's parent project <a href=\"https://kx.studio\">KXStudio</a>.",
+        "mail": "falktx@falktx.com"
+    },
+    {
+        "name": "António Saraiva",
+        "nick": "nieee",
+        "url": "https://github.com/nieee/",
+        "role": "Collaborator",
+        "info": "does the graphics and design of the plugins.",
+        "mail": "melmac_tree@hotmail.com"
+    }
+]

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark navbar-expand-lg mt-auto">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url("/") }}">
+            <img src="{{ url("/assets/images/logo.png") }}" alt="DISTRHO"/>
+        </a>
+        <input type="checkbox" id="navbar-toggler" class="d-none" />
+        <label for="navbar-toggler" class="navbar-toggler"
+            data-toggle="collapse" data-target="#navbar-collapsible-content"
+            aria-controls="navbar-collapsible-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </label>
+        <div class="collapse navbar-collapse" id="navbar-collapsible-content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url("/") }}"          >Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("/news/") }}"     >News</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("/plugins/") }}"  >Plugins</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("/framework/") }}">Framework</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("/about/") }}"    >About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url("/downloads/") }}">Downloads</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
