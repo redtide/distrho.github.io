@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>DISTRHO News</title>
+    <link href="https://distrho.kx.studio/atom.xml" rel="self"/>
+    <icon>https://distrho.kx.studio/assets/icons/favicon-32x32.png</icon>
+    <link href="https://distrho.kx.studio"/>
+    <updated>2021-10-18T06:06:38+00:00</updated>
+    <id>https://distrho.kx.studio/</id>
+    <entry>
+        <title>Updated Linux ports, and added a few more</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/10/07/updated-linux-ports-and-added-a-few-more/"/>
+        <published>2011-10-07T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/10/07/updated-linux-ports-and-added-a-few-more/</id>
+        <content type="html">&lt;p&gt;We just updated all our available plugins/ports (so far only the TAL and Arctican ports),
+so they can work on older systems.
+Previously they were built with &amp;quot;-march=native&amp;quot;, making them unusable on older machines.
+Now all plugins are compiled with &amp;quot;-mtune=generic -msse&amp;quot;, using gcc-4.4.
+If the previous versions were working for you, don&#039;t bother downloading the new zip files.&lt;/p&gt;
+&lt;p&gt;We added a few more Linux ports, and some already made Linux VSTs, just for convenience.
+The plugins we added to Ports are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Argotlunar&lt;/li&gt;
+&lt;li&gt;HybridReverb2&lt;/li&gt;
+&lt;li&gt;Juce Pitcher&lt;/li&gt;
+&lt;li&gt;midilfo (Standalone only)&lt;/li&gt;
+&lt;li&gt;sDelay&lt;/li&gt;
+&lt;li&gt;sorollet (VST only)&lt;/li&gt;
+&lt;li&gt;Wolpertiner&lt;/li&gt;
+&lt;/ul&gt;</content>
+    </entry>
+    <entry>
+        <title>SourceForge project created</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/04/27/sourceforge-project-created/"/>
+        <published>2011-04-27T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/04/27/sourceforge-project-created/</id>
+        <content type="html">&lt;p&gt;The name came out of an IRC conversation, where everyone was shouting out names for this new project.
+The &#039;DISTRHO&#039; name was picked, and the project was created just a few days later.
+You can go to the project page by clicking &lt;a href=&quot;https://sourceforge.net/projects/distrho/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>New plugins and minor fixing</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2014/08/26/new-plugins-and-minor-fixing/"/>
+        <published>2014-08-26T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2014/08/26/new-plugins-and-minor-fixing/</id>
+        <content type="html">&lt;p&gt;In this release we bring 4 new Linux plugin ports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;EasySSP&lt;/li&gt;
+&lt;li&gt;LUFS Meter&lt;/li&gt;
+&lt;li&gt;Luftikus&lt;/li&gt;
+&lt;li&gt;Stereo Source Separator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The DPF-based plugins also had some minor fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3BandEQ/Splitter had its sliders inverted, now fixed&lt;/li&gt;
+&lt;li&gt;ProM now has pre-compiled linux binaries; UI can be resized by using - and + keys&lt;/li&gt;
+&lt;li&gt;MVerb knobs order has been fixed&lt;/li&gt;
+&lt;li&gt;Allow to open UI in LV2 hosts that don&#039;t support options feature (Ingen)&lt;/li&gt;
+&lt;li&gt;Workaround for some VST hosts that don&#039;t set sample rate during init (Ardour3 and energyXT)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kvraudio.com/forum/viewtopic.php?t=419123&quot;&gt;Comments and discussion&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>TAL Plugins - Linux Port</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/09/07/tal-plugins---linux-port/"/>
+        <published>2011-09-07T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/09/07/tal-plugins---linux-port/</id>
+        <content type="html">&lt;p&gt;This is our just job, and we&#039;re very excited about it.
+The awesome TAL plugins (those who use the Juce toolkit) were compiled for Linux, both in 32bit and 64bit form.
+In the pack you will find TAL Dub 3, Filter 1 &amp;amp; 2, Reverb 1 &amp;amp; 2&amp;amp; 3, Vocoder 2 and NoiseMaker.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>New major release</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2018/03/13/new-major-release/"/>
+        <published>2018-03-13T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2018/03/13/new-major-release/</id>
+        <content type="html">&lt;p&gt;A new release after years without one!
+A lot of changes happened on the underlying plugin frameworks (DPF and Juce).
+We also updated the way updates are handled, so it will be less work for next time
+(and thus, hopefully, have updates more often from now on)&lt;/p&gt;
+&lt;p&gt;The amount of changes in the plugin frameworks is so big (it has been 4 years
+since last release!), that we are not going to write about them in detail.
+But the major highlights follow below.&lt;/p&gt;
+&lt;p&gt;The following new Linux ports were added: (LV2 and VST)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JuceOPL&lt;/li&gt;
+&lt;li&gt;ReFine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The DPF-based plugins had some changes too:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;glBars added&lt;/li&gt;
+&lt;li&gt;Kars added&lt;/li&gt;
+&lt;li&gt;ndc-Plugs added&lt;/li&gt;
+&lt;li&gt;A new DPF-Plugins git repo was created, for easy packaging of all our plugins&lt;/li&gt;
+&lt;li&gt;MAX gen~ based plugins can be created, see &lt;a href=&quot;https://github.com/DISTRHO/DPF-Max-Gen&quot;&gt;this link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since last release, a few projects have appeared that use DPF. Here&#039;s a few:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.com/ftz/chiptune/&quot;&gt;FTZ Chiptune&lt;/a&gt; - Collection of basic waveform synths&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rghvdberg/ninjas/&quot;&gt;Ninjas&lt;/a&gt; - Sample Slicing Plugin&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pdesaulniers/wolf-shaper/&quot;&gt;Wolf-Shaper&lt;/a&gt; - Waveshaper with graph editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zamaudio.com/?p=976&quot;&gt;ZamAudio plugin collection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zynaddsubfx.sourceforge.net/&quot;&gt;ZynAddSubFX&lt;/a&gt;, uses DPF for its plugin support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other small changes relevant to the project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nekobi moved to plugins (used to be in ports), as original developer is happy with it
+(and has RW access to our git repo too)&lt;/li&gt;
+&lt;li&gt;The DPF &amp;quot;framework&amp;quot; has evolved with JACK Standalone export,
+Transport sync among other things&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kvraudio.com/forum/viewtopic.php?f=191&amp;amp;t=504728&quot;&gt;Comments and discussion&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>Website online</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/09/05/website-online/"/>
+        <published>2011-09-05T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/09/05/website-online/</id>
+        <content type="html">&lt;p&gt;The DISTRHO website is now online. It&#039;s based on a simple and free HTML5 template from TemplateMonster.com.
+The overall look of the website might change during our first days, but after a few plugins get released, it should be all set.
+We&#039;re alive and here to rock your world!&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>New release pack (2012-05-18)</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2012/05/18/new-release-pack-2012-05-18/"/>
+        <published>2012-05-18T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2012/05/18/new-release-pack-2012-05-18/</id>
+        <content type="html">&lt;p&gt;We just released our very first audio plugins (3BandEQ/Splitter and PingPongPan),
+and added a few more Linux ports (dRowAudio Plugins, Juced Plugins, Highlife and more!).\
+This release brings LV2 support for all plugins.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kvraudio.com/forum/viewtopic.php?t=350181&quot;&gt;Comments and discussion&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>Arctican Plugins - Linux Port</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/09/13/arctican-plugins---linux-port/"/>
+        <published>2011-09-13T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/09/13/arctican-plugins---linux-port/</id>
+        <content type="html">&lt;p&gt;These simple but useful plugins were ported to Linux, now available to download for both 32bit and 64bit systems.
+In the pack you will find Arctican &amp;quot;The Function&amp;quot; and &amp;quot;The Pilgrim&amp;quot;.&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>New release pack (2014-07-16)</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2014/07/16/new-release-pack-2014-07-16/"/>
+        <published>2014-07-16T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2014/07/16/new-release-pack-2014-07-16/</id>
+        <content type="html">&lt;p&gt;In this release we cleaned up all the plugins, added new ones and removed those
+that we not considered good enough.\
+Standalones are no longer available.
+Highlife was removed as a requested by its authors.&lt;/p&gt;
+&lt;p&gt;The plugins we added to Ports are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dexed&lt;/li&gt;
+&lt;li&gt;KlangFalter&lt;/li&gt;
+&lt;li&gt;MVerb&lt;/li&gt;
+&lt;li&gt;Nekobi&lt;/li&gt;
+&lt;li&gt;Obxd&lt;/li&gt;
+&lt;li&gt;PitchedDelay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally we made a new plugin - ProM - a music visualizer as audio plugin based on projectm.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.kvraudio.com/forum/viewtopic.php?t=416058&quot;&gt;Comments and discussion&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <title>Standalone versions</title>
+        <author><name>falkTX</name></author>
+        <link href="https://distrho.kx.studio/distrho.github.io/news/2011/09/13/standalone-versions/"/>
+        <published>2011-09-13T00:00:00+00:00</published>
+        <id>/distrho.github.io/news/2011/09/13/standalone-versions/</id>
+        <content type="html">&lt;p&gt;Standalone versions of the Arctican and TAL Plugins ports are now available.
+They are useful if your favourite host does not support VST plugins yet.
+They are also useful for packaging into distributions because they don&#039;t require
+any restricted code to build (like the VST-SDK).
+These standalone versions can work with ALSA or JACK.&lt;/p&gt;</content>
+    </entry>
+</feed>
